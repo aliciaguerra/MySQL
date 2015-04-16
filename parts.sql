@@ -1,9 +1,0 @@
-/*creates the parts table*/
-CREATE TABLE Parts
-(
-PartID INT NOT NULL,
-PartName VARCHAR(40) NOT NULL,
-CatID INT NOT NULL,
-PRIMARY KEY (PartID)
-)
-ENGINE=MYISAM;
