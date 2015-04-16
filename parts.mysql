@@ -1,18 +1,9 @@
 /*creates the parts table*/
 CREATE TABLE Parts
 (
-/*The column's name is PartID, it is configured with INT data type (no permit up to four numerals), and null values
-are not permitted. PartID is the value used for the <column name> placeholder, INT is the value used for the <type>
-placeholder, and the only optional element used is not null. The <table element> ends with a comma because another
-<table element> defintion follows.*/
 PartID INT NOT NULL,
 PartName VARCHAR(40) NOT NULL,
 CatID INT NOT NULL,
 PRIMARY KEY (PartID)
 )
-/*This statement defines the type of table that is being created. If you compare this to the syntax, you see that you've
-been chosen out of the available options:
-ENGINE={BDB|MEMORY|ISAM|INNODB|MERGE|MRG_MYISAM|MYISAM)]
-As the syntax indicates, this entire line of code is optional. However, if you're going to include it, you must include
-ENGINE= and exactly one of the options. */
 ENGINE=MYISAM;
